@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <form id="myForm" onsubmit="onSubmit()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="sport">Sport</label>
+        <select id="sport">
+            <option value="football">Football</option>
+            <option value="pingpong">Ping Pong</option>
+            <option value="golf">Golf</option>
+            <option value="chess">Chess</option>
+        </select>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+    <script>
+    function onSubmit() {
+        var name = document.getElementById("name").value;
+        var sport = document.getElementById("sport").value;
+        document.writeln("My name is " + name);
+        document.writeln(" and I like " + sport);
+    }
+    </script>
+  </body>
+</html>
